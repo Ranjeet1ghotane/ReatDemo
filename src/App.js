@@ -1,9 +1,10 @@
 import "./App.css";
 import Navbar from "./Components/Navbar";
-import Imagetag from "./Components/Imagetag";
+import AddForm from "./Components/AddForm";
 import TextArea from "./Components/TextArea";
-import About from "./Components/About";
 import { useState } from "react";
+
+
 function App() {
   const [mode, changMode] = useState("light");
   return (
@@ -13,6 +14,7 @@ function App() {
       <br></br>
       <TextArea Text="convert to uppercase"></TextArea>
       {/*<About></About>*/}
+      <AddForm></AddForm>
     </div>
   );
 }
