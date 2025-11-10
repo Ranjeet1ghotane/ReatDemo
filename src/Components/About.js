@@ -1,10 +1,18 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 
 export default function About() {
   const [myStyle, chngemyStyle] = useState({
     color: "white",
     backgroundColor: "black",
   });
+
+  // useEffect(()=> {
+  //   console.log("User update mystyle")
+  // },[]);
+
+  useEffect(()=> {
+    console.log("User update mystyle")
+  },[myStyle]);
 
   const darkModeOff = () => {
     if (myStyle.color == "white") {

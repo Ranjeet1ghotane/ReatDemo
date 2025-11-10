@@ -3,6 +3,7 @@ import Navbar from "./Components/Navbar";
 import AddForm from "./Components/AddForm";
 import TextArea from "./Components/TextArea";
 import { useState } from "react";
+import About from "./Components/About";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <TextArea Text="convert to uppercase"></TextArea>
       {/*<About></About>*/}
       <AddForm></AddForm>
+      <About></About>
     </div>
   );
 }
